@@ -22,7 +22,7 @@ makeVector <- function(x = matrix()) {
 ## If the inverse was calculated and the 
 ## matrix don't changed, it has to retrieve the inverse from the cache.
 
-cacheSolve <- function(x, ...) {
+cachemean <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
         inv <- x$getInverse()
         if (!is.null(inv)) {
